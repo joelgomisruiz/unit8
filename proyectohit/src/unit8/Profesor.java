@@ -7,13 +7,19 @@ package unit8;
  * @author joel
  *
  */
-public class Profesor {
+public class Profesor extends Persona {
 
 	/**
 	 * 
 	 */
 	public Profesor() {
-		// TODO Auto-generated constructor stub
+	}
+	public Profesor(String nombre, String dni) {
+		this.nombre = nombre;
+		this.dni = dni;
+	}
+	boolean esProfesor() {
+		return true;
 	}
 
 }

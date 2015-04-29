@@ -26,11 +26,11 @@ public class Asignatura {
 	public void SetNombre(String nombre){
 		this.nombre = nombre;
 	}
-	public String GetDni(){
-		return dni;
+	public double getNota(){
+		return nota;
 	}
-	public void SetDni(String dni){
-		this.dni = dni;
+	public void Setnota(double nota){
+		this.nota = nota;
 	}
 
 }
