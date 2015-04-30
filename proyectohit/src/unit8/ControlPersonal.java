@@ -59,6 +59,8 @@ public class ControlPersonal {
 		Asignatura a2 = new Asignatura("Entornos");
 		Asignatura a3 = new Asignatura("Sistemas");
 		Asignatura a4 = new Asignatura("Lenguajes de marcas");
+		Asignatura a5 = new Asignatura("Base de Datos");
+
 		
 		Alumno al1 = new Alumno("Joel", "111111111A");
 		Alumno al2 = new Alumno("Gaspar", "222222222B");
@@ -95,8 +97,12 @@ public class ControlPersonal {
 				personas.get(i).anyadirAsignatura(a4);
 			}
 		}
-		//añadimos al profesor lenguajes de marcas
+		//añadidos los profesores
+		p1.anyadirAsignatura(a2);
+		p2.anyadirAsignatura(a1);
 		p3.anyadirAsignatura(a4);
+		p3.anyadirAsignatura(a3);
+		p1.anyadirAsignatura(a5);
 		
 		System.out.println();
 		System.out.println("Listado de alumnos ordenados por nombre de asignatura:");
