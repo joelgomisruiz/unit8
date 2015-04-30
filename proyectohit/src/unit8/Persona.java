@@ -15,14 +15,13 @@ abstract class Persona {
 
 	protected String dni;
 	protected String nombre;
-	protected ArrayList<Asignatura> asignaturas;
+	protected ArrayList<Asignatura> asignaturas = new ArrayList<Asignatura>();
 	/**
 	 * 
 	 */
 	public Persona(String dni, String nombre) {
 		this.dni = dni;
 		this.nombre = nombre;
-		asignaturas = new ArrayList<Asignatura>();
 	}
 	public Persona(){
 		
@@ -34,7 +33,11 @@ abstract class Persona {
 	abstract boolean esProfesor();
 	
 	public void mostrarListadoAsignaturasNotas(){
-		System.out.println("nombre: " + getNombre() + asignaturas.get(0).GetNombre() + asignaturas.get(0).getNota());
+		
+		for (int i=0; i< asignaturas.size();i++){
+			System.out.println("nombre: " + asignaturas.get(i).GetNombre() + " Nota: " + asignaturas.get(i).getNota());
+		}
+		
 	}
 	public String getNombre(){
 		return nombre;
