@@ -57,7 +57,7 @@ public class ControlPersonal {
 		
 		Asignatura a1 = new Asignatura("Programacion");
 		Asignatura a2 = new Asignatura("Entornos");
-		Asignatura a3 = new Asignatura("Sistemas");
+		Asignatura a3 = new Asignatura("Base de Datos");
 		
 		Alumno al1 = new Alumno("Joel", "111111111A");
 		Alumno al2 = new Alumno("Gaspar", "222222222B");
