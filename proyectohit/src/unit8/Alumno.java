@@ -19,6 +19,9 @@ public class Alumno extends Persona {
 	public Alumno(){
 		
 	}
+	/**
+	 * Metodo de la clase persona que devuelve false al ser alumno
+	 */
 	public boolean esProfesor(){
 		return false;
 	}

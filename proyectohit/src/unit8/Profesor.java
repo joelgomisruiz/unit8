@@ -18,6 +18,9 @@ public class Profesor extends Persona {
 		this.nombre = nombre;
 		this.dni = dni;
 	}
+	/**
+	 * Metodo de la clase persona que devuelve true al ser profesor
+	 */
 	boolean esProfesor() {
 		return true;
 	}

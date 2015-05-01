@@ -21,10 +21,16 @@ public class ControlPersonal {
 	 */
 	private ControlPersonal() {
 	}
-
+	/**
+	 * Metodo que añade personas al arraylist
+	 * @param p
+	 */
 	public static void anyadirPersona(Persona p){
 		personas.add(p);
 	}
+	/**
+	 * Metodo que ordena el arraylist por dni
+	 */
 	public void ordenarPorDni(){
 		Collections.sort(personas, new Comparator<Persona>(){
 
@@ -34,6 +40,9 @@ public class ControlPersonal {
 			}
 		});	
 	}
+	/**
+	 * Metodo que ordena el arraylist por orden alfabetico
+	 */
 	public void ordenarPorOrdenAlfabetico(){
 		Collections.sort(personas, new Comparator<Persona>(){
 
@@ -43,6 +52,9 @@ public class ControlPersonal {
 			}
 		});	
 	}
+	/**
+	 * Metodo que muestra el nombre de las personas y el dni
+	 */
 	public void mostrarListado(){
 	
 		for (int i=0; i<personas.size();i++){

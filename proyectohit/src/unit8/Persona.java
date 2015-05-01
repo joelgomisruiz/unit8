@@ -29,9 +29,14 @@ abstract class Persona {
 	public void anyadirAsignatura(Asignatura a){
 		asignaturas.add(a);
 	}
-	
+	/**
+	 * Metodo implementado en la clase hijo que devuelve true si es profesor o false si no lo es
+	 * @return
+	 */
 	abstract boolean esProfesor();
-	
+	/**
+	 * Metodo que muestra el nombre de la asignatura y la nota
+	 */
 	public void mostrarListadoAsignaturasNotas(){
 		
 		for (int i=0; i< asignaturas.size();i++){
@@ -39,22 +44,44 @@ abstract class Persona {
 		}
 		
 	}
+	/**
+	 * Metodo que devuelve el nombre
+	 * @return
+	 */
 	public String getNombre(){
 		return nombre;
 	}
+	/**
+	 * Metodo que asigna el nombre
+	 * @param nombre
+	 */
 	public void setNombre(String nombre){
 		this.nombre = nombre;
 	}
+	/**
+	 * Metodo que devuelve el nombre
+	 * @return
+	 */
 	public String getDni(){
 		return dni;
 	}
+	/**
+	 * Metodo que asigna el dni
+	 * @param dni
+	 */
 	public void setDni(String dni){
 		this.dni = dni;
 	}
+	/**
+	 * Metodo que devuelve el arraylist de asignaturas
+	 * @return
+	 */
 	public ArrayList<Asignatura> getAsignaturas(){
 		return asignaturas;
 	}
-	
+	/**
+	 * Metodo para ordenar el arraylist por asignaturas
+	 */
 	public void ordenarPorAsignatura(){
 		Collections.sort(asignaturas, new Comparator<Asignatura>(){
 
@@ -64,7 +91,9 @@ abstract class Persona {
 			}
 		});	
 	}
-	
+	/**
+	 * Metodo que ordena el arraylist por las notas
+	 */
 	public void ordenarPorNota(){
 		Collections.sort(asignaturas, new Comparator<Asignatura>(){
 
